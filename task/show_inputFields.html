@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Input Value</title>
+    <script>
+        // Function to retrieve the input value and display it
+        function displayInputValue() {
+            // Get the value from the input field
+            var inputValue = document.getElementById("myInput").value;
+            
+            // Display the value in the 'displayArea' element
+            document.getElementById("displayArea").textContent = "You entered: " + inputValue;
+        }
+    </script>
+</head>
+<body>
+    <h1>Retrieve and Display Input Value</h1>
+    
+    <!-- Input field -->
+    <label for="myInput">Enter something:</label>
+    <input type="text" id="myInput">
+    
+    <!-- Button to trigger the function -->
+    <button onclick="displayInputValue()">Display Input</button>
+    
+    <!-- Area where the input value will be displayed -->
+    <p id="displayArea" style="font-weight: bold;"></p>
+</body>
+</html>

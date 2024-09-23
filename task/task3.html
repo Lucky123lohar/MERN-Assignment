@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // check number is even or odd
+function checknumber(number) {
+    if(number%2 == 0){
+        console.log("number is even")
+    }
+    else{
+        console.log("number is odd")
+    }
+}
+
+checknumber(6)
+checknumber(5)
+
+// solve expresion
+function solveExpression(num1,num2,oper) {
+    if(oper == '+'){
+        console.log(num1 + num2)
+    }
+    else if(oper == '-'){
+        console.log(num1 - num2)
+    }
+    else if(oper == '*'){
+        console.log(num1 * num2)
+    }
+    else if(oper == '/'){
+        console.log(num1 / num2)
+    }
+    else{
+        console.log("invalid operator")
+    }
+}
+
+solveExpression(10,2,'+')
+solveExpression(10,2,'-')
+solveExpression(10,2,'*')
+solveExpression(10,2,'/')
+    </script>
+</body>
+</html>

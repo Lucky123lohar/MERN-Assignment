@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML and textContent Example</title>
+    <script>
+        // Function to retrieve and display innerHTML
+        function showInnerHTML() {
+            var element = document.getElementById("myElement");
+            var innerHTMLValue = element.innerHTML;
+            document.getElementById("innerHTMLDisplay").textContent = "innerHTML: " + innerHTMLValue;
+        }
+
+        // Function to retrieve and display textContent
+        function showTextContent() {
+            var element = document.getElementById("myElement");
+            var textContentValue = element.textContent;
+            document.getElementById("textContentDisplay").textContent = "textContent: " + textContentValue;
+        }
+    </script>
+</head>
+<body>
+    <h1>innerHTML and textContent Retrieval</h1>
+    
+    <!-- Element with text and HTML tags -->
+    <div id="myElement">
+        This is <strong>bold text</strong> and this is <em>italic text</em>.
+    </div>
+    
+    <!-- Buttons to trigger functions -->
+    <button onclick="showInnerHTML()">Show innerHTML</button>
+    <button onclick="showTextContent()">Show textContent</button>
+    
+    <!-- Display areas for innerHTML and textContent -->
+    <p id="innerHTMLDisplay"></p>
+    <p id="textContentDisplay"></p>
+</body>
+</html>

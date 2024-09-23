@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove List Item</title>
+    <script>
+        // JavaScript function to remove a list item
+        function removeListItem(button) {
+            // Find the parent <li> of the button and remove it
+            var listItem = button.parentElement;
+            listItem.remove();
+        }
+    </script>
+</head>
+<body>
+    <h1>Remove List Item Example</h1>
+    
+    <!-- Unordered list -->
+    <ul id="myList">
+        <li>Item 1 <button onclick="removeListItem(this)">Remove</button></li>
+        <li>Item 2 <button onclick="removeListItem(this)">Remove</button></li>
+        <li>Item 3 <button onclick="removeListItem(this)">Remove</button></li>
+        <li>Item 4 <button onclick="removeListItem(this)">Remove</button></li>
+    </ul>
+</body>
+</html>

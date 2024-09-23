@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and For Loop Example</title>
+</head>
+<body>
+    <h1>Array Values Example</h1>
+    <div id="output"></div>
+    <script>
+        let myArray = [1,2,3,4,5];
+        let outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = "Array values: " + myArray.join(', ');
+        for (let i = 0; i < myArray.length; i++) {
+            outputDiv.innerHTML += "<br>Value at index " + i + ": " + myArray[i];
+        }
+    </script>
+</body>
+</html>

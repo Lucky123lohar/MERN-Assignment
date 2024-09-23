@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Alert</title>
+    <script>
+        // Function to show an alert when the button is clicked
+        function showAlert() {
+            alert("Button was clicked!");
+        }
+
+        // Add event listener to the button when the page loads
+        window.onload = function() {
+            var button = document.getElementById("myButton");
+            button.addEventListener("click", showAlert);
+        };
+    </script>
+</head>
+<body>
+    <h1>Button Click Event Example</h1>
+    
+    <!-- Button to trigger the alert -->
+    <button id="myButton">Click me</button>
+</body>
+</html>

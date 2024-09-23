@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+        }
+      h1 {
+        text-align: center;
+        color: blueviolet;
+      }
+
+      .container {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(247, 246, 246);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .items {
+        padding: 10px;
+        margin-left: 8px;
+        text-align: center;
+        box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.368);
+        border-radius: 10px;
+        width: 270px;
+        height: 350px;
+        background-color: white;
+      }
+      .hder{
+        background-color: whitesmoke;
+        height: 150px;
+        text-align: center;
+      }
+      .mode{
+        /* background-color: rgb(197, 83, 83); */
+        height: 620px;
+        width: 930px;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 30px;
+        animation: mymove 10s infinite;
+      }
+      .explain{
+        background-color: rgb(156, 156, 228);
+        position: relative;
+        width: 350px;
+        height: 220px;
+        margin: auto;
+        margin-top: -110px;
+        margin-left: 540px;
+        border-radius: 30px;
+        border: 10px solid white;
+        text-align: left;
+        padding: 5px;
+        font-size: 30px;
+        word-spacing: 5px;
+      }
+      .mode2{
+        text-align: left;
+        margin-top: -60px;
+      }
+      .mode3{
+        margin-top: 20px;
+        text-align: left;
+        color: black;
+      }
+      .end{
+        width: 1500px;
+        word-spacing: 8px;
+        margin-top: 660px;
+        font-size: 25px;
+      }
+      @keyframes mymove {
+        from {background-color: rgb(216, 216, 216); left: 0px;}
+        to {left: 500px;}
+      }
+    </style>
+  </head>
+  <body>  
+    <div class="hder">
+        <h1>Team</h1>
+        <h2>Meet our Expert</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            facilis?
+        </p>
+    </div>
+    <div class="container">
+      <div class="items item1">
+        <img src="WhatsApp Image 2024-08-12 at 13.56.43.jpeg" alt="" />
+        <h3>Michel Smith</h3>
+        <h5>🤍Product designer</h5>
+      </div>
+      <div class="items item2">
+        <img src="WhatsApp Image 2024-08-12 at 13.56.44.jpeg" alt="" />
+        <h3>David Smith</h3>
+        <h5>Creative designer</h5>
+      </div>
+      <div class="items item3">
+        <img src="WhatsApp Image 2024-08-12 at 13.56.42.jpeg" alt="" />
+        <h3>John Doe</h3>
+        <h5>Graphic designer</h5>
+      </div>
+      <div class="items item4">
+        <img src="WhatsApp Image 2024-08-12 at 13.56.40.jpeg" alt="" />
+        <h3>Houe John</h3>
+        <h5>Web designer</h5>
+      </div>
+    </div>
+    <div class="mode">
+      <img src="WhatsApp Image 2024-08-12 at 13.56.35.jpeg" style="border-radius: 15px;" alt="">
+      <p class="explain">5 Year of Working experience <br> We Crafted an design Library that is rebust and instutive to use </p>
+      <h1 class="mode2">About Us</h1>
+      <h1 class="mode3">Built-with bootstrap 5, a New experience</h1>
+    </div>
+    <div class="end">
+      <h6>We Crafted an awesome design Library that is robust and intutiveto use. No matter you're building a business presentation website or a complex web application</h6>
+    </div>
+    <div class="hder" style="background-color: white; word-spacing: 3px;">
+      <h1>30k</h1>
+      <h3>Happy client</h3>
+      <h5>We Crafted an awesome design Library that is robust and intutiveto use.</h5>
+      <h1>42k</h1>
+      <h3>project Done</h3>
+      <h5>No matter you're building a business presentation website or a complex web application</h5>
+    </div>
+  </body>
+</html>

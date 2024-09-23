@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background on Hover</title>
+    <style>
+        /* Initial styling for the div */
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        // Function to change background color to blue on hover
+        function changeToBlue() {
+            document.getElementById("myDiv").style.backgroundColor = "blue";
+        }
+
+        // Function to change back to original color on mouse out
+        function changeToOriginal() {
+            document.getElementById("myDiv").style.backgroundColor = "lightgray";
+        }
+    </script>
+</head>
+<body>
+    <h1>Hover to Change Background Color</h1>
+    
+    <div id="myDiv" onmouseover="changeToBlue()" onmouseout="changeToOriginal()">
+        Hover over me!
+    </div>
+</body>
+</html>

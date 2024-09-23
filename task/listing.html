@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List Item</title>
+    <script>
+        // JavaScript function to add a new list item
+        function addListItem() {
+            // Create a new li element
+            var newItem = document.createElement("li");
+            // Create a text node with the content
+            var text = document.createTextNode("New List Item");
+            // Append the text to the li element
+            newItem.appendChild(text);
+            
+            // Find the ul element and append the new li item to it
+            document.getElementById("myList").appendChild(newItem);
+        }
+    </script>
+</head>
+<body>
+    <h1>Add List Item Example</h1>
+    
+    <!-- Unordered list -->
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <!-- Button to trigger adding a new list item -->
+    <button onclick="addListItem()">Add List Item</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility Example</title>
+    <style>
+        /* CSS to hide elements with the 'hidden' class */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        // Function to toggle the 'hidden' class
+        function toggleVisibility() {
+            var element = document.getElementById("toggleElement");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body>
+    <h1>Toggle Element Visibility</h1>
+    
+    <!-- Element with class 'hidden' -->
+    <div id="toggleElement" class="hidden">
+        This is a toggleable element.
+    </div>
+    
+    <!-- Button to trigger the toggle function -->
+    <button onclick="toggleVisibility()">Show/Hide Element</button>
+</body>
+</html>
